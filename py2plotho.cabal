@@ -1,0 +1,26 @@
+name:                py2plotho
+version:             0.1.0.0
+synopsis:            easy real-time plotting of python data
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              Greg Horn
+maintainer:          gregmainland@gmail.com
+copyright:           Copyright (c) 2016 Greg Horn
+category:            Graphics
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable py2plotho
+  main-is:             PyPlotHo.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.8 && <5,
+                       aeson >=0.9,
+                       bytestring,
+                       Plot-ho-matic >= 0.8.0.0,
+                       zeromq4-haskell >=0.6
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  ghc-options:         -O2 -Wall -with-rtsopts=-T
