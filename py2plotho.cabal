@@ -19,6 +19,7 @@ executable py2plotho
   build-depends:       base >=4.8 && <5,
                        aeson >=0.9,
                        bytestring,
+                       containers,
                        Plot-ho-matic >= 0.8.0.0,
                        zeromq4-haskell >=0.6
   hs-source-dirs:      src
